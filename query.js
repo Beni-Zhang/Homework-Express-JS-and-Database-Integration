@@ -3,12 +3,12 @@ const { Pool } = require('pg');
 
 const app = express();
 const pool = new Pool({
-    user: 'isi username pg admin anda',
-    host: 'isi host pg admin anda',
-    database: 'isi nama database pg admin anda',
-    password: 'isi password pg admin anda',
-    port: 5432,
-  });
+  user: 'postgres',
+  host: 'localhost',
+  database: 'rental',
+  password: 'benizhang123',
+  port: 5432,
+});
 
 app.get('/films', async (req, res) => {
   try {

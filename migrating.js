@@ -1,12 +1,12 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'isi username pg admin anda',
-    host: 'isi host pg admin anda',
-    database: 'isi nama database pg admin anda',
-    password: 'isi password pg admin anda',
+    user: 'postgres',
+    host: 'localhost',
+    database: 'rental',
+    password: 'benizhang123',
     port: 5432,
-  });
+});
 
 const migrate = async () => {
   try {
